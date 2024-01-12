@@ -124,9 +124,11 @@ exports.viewAnimal = async (req,res) =>{
             })
         }else{
             res.status(200).json({
-                message :`list of all ${animal.length} animals in the database`,
+                message :`THere are ${animal.length} animals in the database `,
                 data : animal
             })
+
+
         }
         
 
