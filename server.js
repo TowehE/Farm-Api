@@ -16,7 +16,7 @@ app.use(express.json())
 // import router
 const animalRouter = require("./router/router")
 
-app.get('/api/v1', (req, res) => {
+app.get('/', (req, res) => {
     res.send("Welcome to Animal logIn API");
 })
 
