@@ -61,7 +61,7 @@ exports.createAnimal = async (req,res) =>{
     
         
         await animal.save()
-        return res['status'](404)['json']({
+        return res['status'](200)['json']({
             message:"Animal has been added to record",
             data: animal,
         })
@@ -129,6 +129,7 @@ exports.viewAnimal = async (req,res) =>{
             })
         }
         
+
     } catch (error) {
         res.status(500).json({
             message : error.message
